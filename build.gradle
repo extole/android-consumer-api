@@ -2,7 +2,7 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 
 group = 'com.extole.consumer'
-version = '1.0.25'
+version = '1.0.26'
 
 buildscript {
     repositories {

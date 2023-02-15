@@ -26,7 +26,7 @@ After the client library is installed/deployed, you can use it in your Maven pro
 <dependency>
     <groupId>com.extole.consumer</groupId>
     <artifactId>consumer-api-feign</artifactId>
-    <version>1.0.25</version>
+    <version>1.0.26</version>
     <scope>compile</scope>
 </dependency>
 

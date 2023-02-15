@@ -118,6 +118,37 @@ public interface DefaultEndpoints extends ApiClient.Api {
   /**
    * 
    * This endpoint is optimized for calling from a web page.For proper RESTful endpoint consider /v6/zones.
+   * @param body  (optional)
+   */
+  @RequestLine("POST /zones")
+  @Headers({
+      "Content-Type: application/json",
+      "Accept: application/json",
+  })
+  void post(RenderZoneRequest body) throws RestException;
+
+  /**
+   * 
+   * This endpoint is optimized for calling from a web page.For proper RESTful endpoint consider /v6/zones.
+   * Note, this is equivalent to the other <code>post</code> method,
+   * but with the query parameters collected into a single Map parameter.
+   * @param body  (optional)
+   * @param queryParams Map of query parameters as name-value pairs
+   *   <p>The following elements may be specified in the query map:</p>
+   *   <ul>
+   *   </ul>
+
+   */
+  @RequestLine("POST /zones")
+  @Headers({
+      "Content-Type: application/json",
+      "Accept: application/json",
+  })
+  void post(RenderZoneRequest body, @QueryMap(encoded=true) Map<String, Object> queryParams) throws RestException;
+
+  /**
+   * 
+   * This endpoint is optimized for calling from a web page.For proper RESTful endpoint consider /v6/zones.
    * @param zoneName  (required)
    * @param body  (optional)
    */
@@ -147,37 +178,6 @@ public interface DefaultEndpoints extends ApiClient.Api {
       "Accept: application/json",
   })
   void post(@Param("zoneName") String zoneName, Map<String, Object> body, @QueryMap(encoded=true) Map<String, Object> queryParams) throws RestException;
-
-  /**
-   * 
-   * This endpoint is optimized for calling from a web page.For proper RESTful endpoint consider /v6/zones.
-   * @param body  (optional)
-   */
-  @RequestLine("POST /zones")
-  @Headers({
-      "Content-Type: application/json",
-      "Accept: application/json",
-  })
-  void post(RenderZoneRequest body) throws RestException;
-
-  /**
-   * 
-   * This endpoint is optimized for calling from a web page.For proper RESTful endpoint consider /v6/zones.
-   * Note, this is equivalent to the other <code>post</code> method,
-   * but with the query parameters collected into a single Map parameter.
-   * @param body  (optional)
-   * @param queryParams Map of query parameters as name-value pairs
-   *   <p>The following elements may be specified in the query map:</p>
-   *   <ul>
-   *   </ul>
-
-   */
-  @RequestLine("POST /zones")
-  @Headers({
-      "Content-Type: application/json",
-      "Accept: application/json",
-  })
-  void post(RenderZoneRequest body, @QueryMap(encoded=true) Map<String, Object> queryParams) throws RestException;
 
   /**
    * Gets Details for an asset
