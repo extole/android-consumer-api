@@ -5,7 +5,7 @@
   <artifactId>consumer-api-feign</artifactId>
   <packaging>jar</packaging>
   <name>consumer-api-feign</name>
-  <version>1.0.26</version>
+  <version>1.0.25</version>
   <url>http://github.com/extole/android-consumer-api</url>
   <description>Extole Consumer API for Android</description>
   <scm>
