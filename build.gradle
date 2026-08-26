@@ -98,7 +98,7 @@ ext {
     jackson_version = "2.22"
     threepane_version = "2.6.4"
     feign_version = "9.4.0"
-    feign_form_version = "2.1.0"
+    feign_form_version = "3.8.0"
     junit_version = "4.12"
     oltu_version = "1.0.2"
 }
