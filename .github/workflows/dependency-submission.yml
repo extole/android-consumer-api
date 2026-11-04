@@ -29,3 +29,5 @@ jobs:
 
       - name: Submit the resolved dependency graph
         uses: gradle/actions/dependency-submission@v6
+        with:
+          gradle-version: '6.9.4'
